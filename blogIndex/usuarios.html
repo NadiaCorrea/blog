@@ -8,20 +8,19 @@
 </head>
 <body>
     <div>
-        <h3>Usuarios</h3>
-        <form action="">
-
-
-
-            <button id="addUsers">Añadir Usuarios</button>
-        </form>
-
-
-
-
-        
+        <h1>Usuarios</h1>
+        <form id="addUsers" name="addUsers" action="">
+            <label for="userName">Nombre: </label>
+            <input type="text" name="userName" id="userName" required>
+            <label for="userLastName">Apellidos: </label>
+            <input type="text" name="userLastName" id="userLastName" required>
+            <label for="nick">Nombre de usuario: </label>
+            <input type="text" name="nick" id="nick" required>
+            <button id="add" type="submit">Añadir Usuarios</button>
+        </form>        
     </div>
     <div id="outputUsers" hidden>
     </div>
+    <script src="usuarios.js"></script>
 </body>
 </html>

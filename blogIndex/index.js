@@ -11,23 +11,6 @@ pudiendo seleccionar el autor como queramos.
 const list = document.getElementById("postList");
 const peticion = new XMLHttpRequest(); 
 
-//Creación de usuarios con validación de diferentes campos. 
-
-// "id":1,
-//       "user":"Nadia Correa",
-//       "nick":"Nashiacm"
-const addButton = document.getElementById("addUsers");
-
-addButton.addEventListener('click', function (){
-    let divOculto = document.getElementById("outputUsers");
-    divOculto.style.display = "block";
-});
-
-
-
-
-
-
 //Lista de posts con título y autor. 
 
 peticion.open('GET', 'http://localhost:3000/posts');
@@ -42,7 +25,7 @@ peticion.addEventListener('load', function() {
         for (post of postsJ){
             // console.log("entra3");
             let newList = document.createElement("li");
-            let iPost = document.createTextNode("Título: " + post.title + " Autor: " + post.author);
+            let iPost = document.createTextNode("Título: " + post.title + " Autor: " + post.authorId);
             newList.appendChild(iPost);
             newList.id= "post_" + post.id;
             list.appendChild(newList);
@@ -52,15 +35,6 @@ peticion.addEventListener('load', function() {
         muestraError();
     } 
 });
-
-// Post con título, contenido y autor. Además se mostrarán los comentarios y nos permitirá añadir nuevos comentarios, 
-// pudiendo seleccionar el autor como queramos. 
-
-
-
-
-
-
 
 peticion.addEventListener(' error', muestraError); 
 peticion.addEventListener(' abort', muestraError); 
