@@ -1,1 +1,3 @@
 # blog
+
+Vamos a crear un pequeño blog que permita comentarios, para ello tendremos que crear un servidor con json-server con las “tablas” users, posts y comments. Crearemos las siguientes páginas: ● Creación de usuarios con validación de diferentes campos. ● Lista de posts con título y autor. ● Post con título, contenido y autor. Además se mostrarán los comentarios y nos permitirá añadir nuevos comentarios, pudiendo seleccionar el autor como queramos. ● EXTRA: página para añadir nuevos post, permitirá seleccionar el autor mediante un campo select.

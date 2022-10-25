@@ -7,22 +7,22 @@
     },
     {
       "id": 2,
-      "user": "Usuario Dos",
-      "nick": "User2"
+      "user": "Kuro Neko",
+      "nick": "Kuriqui"
     },
     {
       "id": 3,
-      "user": "Usuario Tres",
-      "nick": "User3"
+      "user": "Cherry Liptus",
+      "nick": "Cherry"
     },
     {
       "id": 4,
-      "user": " ccc cfvv",
-      "nick": "cvfc"
+      "user": " Charlotte Wishcat",
+      "nick": "Michita"
     },
     {
       "user": "Pedro Caro",
-      "nick": "pcaro",
+      "nick": "Pcaro",
       "id": 5
     }
   ],
@@ -49,15 +49,15 @@
   "comments": [
     {
       "id": 1,
-      "content": "Esto es un lío",
-      "authorId": 1,
+      "content": "Esto es un lío.",
+      "authorId": 4,
       "postId": 1,
       "timeStamp": "2022-10-13 13:30:25"
     },
     {
       "id": 2,
-      "content": "Eso parece",
-      "authorId": 2,
+      "content": "Eso parece.",
+      "authorId": 5,
       "postId": 1,
       "timeStamp": "2022-10-13 13:35:25"
     },

@@ -73,10 +73,12 @@ function validateName() {
           max = 20;
         console.log(inputUserName);
     const name = inputUserName.value.trim();
+    const span = document.querySelector('#spanName');
     if (!isBetween(name.length, min, max)) {
-        alert(`El nombre debe tener entre ${min} y ${max} caracteres.`)
+        span.innerHTML = `El nombre debe tener entre ${min} y ${max} caracteres.`;
     } else {
         valid = true;
+        span.innerHTML ="";
     }
     return valid;
 };
@@ -86,10 +88,12 @@ function validateLastName(){
     const min = 3,
           max = 30;
     const lastName = inputLastName.value.trim();
+    const span = document.querySelector('#spanLastName');
     if (!isBetween(lastName.length, min, max)) {
-        alert(`Los apellidos deben tener entre ${min} y ${max} caracteres.`)
+        span.innerHTML = `Los apellidos deben tener entre ${min} y ${max} caracteres.`;
     } else {
         valid = true;
+        span.innerHTML = "";
     }
     return valid;
 }
@@ -99,10 +103,12 @@ function validateNick(){
     const min = 3,
           max = 10;
     const nick = inputNick.value.trim();
+    const span = document.querySelector('#spanNick');
     if (!isBetween(nick.length, min, max)){
-        alert(`El nombre de usuario debe tener entre ${min} y ${max} caracteres.`)
+        span.innerHTML = `El nombre de usuario debe tener entre ${min} y ${max} caracteres.`;
     } else {
         valid = true;
+        span.innerHTML = "";
     }
     return valid;
 }
